@@ -36,7 +36,7 @@
 										"path": "/vless"
 								}
 						},
-						"tag": "https://whatsapp.com/channel/0029Va fZ8sV42DciA9aynv2u"
+						"tag": "https://wha"
 				}
 		],
 		"policy": {
