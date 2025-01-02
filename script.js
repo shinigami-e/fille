@@ -292,8 +292,8 @@ $(document).ready(() => {
  opacity:60%;
  `
  text.style.color="green"
- text.style.width="95%"
- text.style.height="80%"
+ text.style.width="90%"
+ text.style.height="90%"
  btnCopy.setAttribute("max","7")
  btnCopy.append(document.createTextNode("COPPY"))
  btnCopy.setAttribute("id","btncopy")
