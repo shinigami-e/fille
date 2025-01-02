@@ -293,7 +293,7 @@ $(document).ready(() => {
  `
  text.style.color="green"
  text.style.width="95%"
- text.style.height="65%"
+ text.style.height="80%"
  btnCopy.setAttribute("max","7")
  btnCopy.append(document.createTextNode("COPPY"))
  btnCopy.setAttribute("id","btncopy")
