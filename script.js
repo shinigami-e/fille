@@ -302,7 +302,7 @@ $(document).ready(() => {
   }
   function copyToClipboard() {
   
-                 text = document.getElementById("content").value
+                 text = document.getElementById("content").textContent
                  const textarea = document.createElement('textarea');
                  textarea.value = text;
                  document.body.appendChild(textarea);
