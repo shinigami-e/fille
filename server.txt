@@ -1,52 +1,99 @@
 {
-		"inbounds": [],
-		"outbounds": [
-				{
-						"mux": {
-								"enabled": false
-						},
-						"protocol": "vless",
-						"settings": {
-								"vnext": [
-										{
-												"address": "test.twimg.com",
-												"port": 443,
-												"users": [
-														{
-																"encryption": "none",
-																"flow": "",
-																"id": "I_Love_🇵🇸_SSHMax_00293e5",
-																"level": 8
-														}
-												]
-										}
-								]
-						},
-						"streamSettings": {
-								"network": "ws",
-								"security": "tls",
-								"tlsSettings": {
-										"allowInsecure": true,
-										"serverName": "test.twimg.com"
-								},
-								"wsSettings": {
-										"headers": {
-												"Host": "RifiTech.iss1.site"
-										},
-										"path": "/vless"
-								}
-						},
-						"tag": "VLESS"
-				}
-		],
-		"policy": {
-				"levels": {
-						"8": {
-								"connIdle": 300,
-								"downlinkOnly": 1,
-								"handshake": 4,
-								"uplinkOnly": 1
-						}
-				}
-		}
+  "dns": {
+    "servers": [
+      "8.8.8.8"
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": "8091",
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "8.8.8.8",
+        "network": "tcp,udp",
+        "port": 53
+      },
+      "tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "1080",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": true
+      },
+      "tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "8080",
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
+      },
+      "tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
+    }
+  ],
+  "log": {
+    "loglevel": "none"
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "test.twimg.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "I_Love_🇵🇸_SSHMax_5aab258",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "test.twimg.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "LKHOFACH7.MA"
+          },
+          "path": "/vless"
+        }
+      },
+      "tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
 }
