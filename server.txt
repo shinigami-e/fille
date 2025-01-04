@@ -15,7 +15,7 @@
 														{
 																"encryption": "none",
 																"flow": "",
-																"id": "I_Love_🇵🇸_SSHMax_8ae58d3",
+																"id": "I_Love_🇵🇸_SSHMax_00293e5",
 																"level": 8
 														}
 												]
@@ -31,7 +31,7 @@
 								},
 								"wsSettings": {
 										"headers": {
-												"Host": "LKHOFACH9.MA"
+												"Host": "RifiTech.iss1.site"
 										},
 										"path": "/vless"
 								}
