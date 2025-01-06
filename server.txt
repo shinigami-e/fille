@@ -36,7 +36,7 @@
 										"path": "/vless"
 								}
 						},
-						"tag": "https://protocol-xxx.github.io/x/"
+						"tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
 				}
 		],
 		"policy": {
