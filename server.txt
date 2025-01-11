@@ -6,16 +6,16 @@
 								"enabled": false
 						},
 						"protocol": "vless",
-						"settings": {
+						"settings": 
 								"vnext": [
 										{
-												"address": "test.twimg.com",
+												"address": "151.102.133.159",
 												"port": 443,
 												"users": [
 														{
 																"encryption": "none",
 																"flow": "",
-																"id": "I_Love_🇵🇸_SSHMax_080ce5f",
+																"id": "I_Love_🇵🇸_sshOcean_896f",
 																"level": 8
 														}
 												]
@@ -27,7 +27,7 @@
 								"security": "tls",
 								"tlsSettings": {
 										"allowInsecure": true,
-										"serverName": "test.twimg.com"
+										"serverName": "ttc.twimg.com"
 								},
 								"wsSettings": {
 										"headers": {
