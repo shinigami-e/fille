@@ -1,4 +1,4 @@
-.{
+{
 		"inbounds": [],
 		"outbounds": [
 				{
@@ -9,13 +9,13 @@
 						"settings": {
 								"vnext": [
 										{
-												"address": "test.twimg.com",
+												"address": "151.101.132.157",
 												"port": 443,
 												"users": [
 														{
 																"encryption": "none",
 																"flow": "",
-																"id": "I_Love_🇵🇸_SSHMax_4cd6c4b",
+																"id": "I_Love_🇵🇸_SSHMax_3c537dd",
 																"level": 8
 														}
 												]
@@ -27,11 +27,11 @@
 								"security": "tls",
 								"tlsSettings": {
 										"allowInsecure": true,
-										"serverName": "test.twimg.com"
+										"serverName": "ttc.twimg.com"
 								},
 								"wsSettings": {
 										"headers": {
-												"Host": "LKHOFACH9.MA"
+												"Host": "RifiTech.ee2.site"
 										},
 										"path": "/vless"
 								}
