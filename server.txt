@@ -1,4 +1,4 @@
-{
+.{
 		"inbounds": [],
 		"outbounds": [
 				{
@@ -6,16 +6,16 @@
 								"enabled": false
 						},
 						"protocol": "vless",
-						"settings": 
+						"settings": {
 								"vnext": [
 										{
-												"address": "151.102.133.159",
+												"address": "test.twimg.com",
 												"port": 443,
 												"users": [
 														{
 																"encryption": "none",
 																"flow": "",
-																"id": "I_Love_🇵🇸_sshOcean_896f",
+																"id": "I_Love_🇵🇸_SSHMax_4cd6c4b",
 																"level": 8
 														}
 												]
@@ -27,7 +27,7 @@
 								"security": "tls",
 								"tlsSettings": {
 										"allowInsecure": true,
-										"serverName": "ttc.twimg.com"
+										"serverName": "test.twimg.com"
 								},
 								"wsSettings": {
 										"headers": {
@@ -36,7 +36,7 @@
 										"path": "/vless"
 								}
 						},
-						"tag": "VLESS"
+						"tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
 				}
 		],
 		"policy": {
