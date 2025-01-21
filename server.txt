@@ -5,18 +5,18 @@
 						"mux": {
 								"enabled": false
 						},
-						"protocol": "vless",
+						"protocol": "vmess",
 						"settings": {
 								"vnext": [
 										{
-												"address": "151.101.132.157",
+												"address": "test.twimg.com",
 												"port": 443,
 												"users": [
 														{
-																"encryption": "none",
-																"flow": "",
-																"id": "I_Love_🇵🇸_SSHMax_3c537dd",
-																"level": 8
+																"alterId": 0,
+																"id": "12f714a0-d7fa-11ef-b437-205c6d5f5d78",
+																"level": 8,
+																"security": "auto"
 														}
 												]
 										}
@@ -27,16 +27,16 @@
 								"security": "tls",
 								"tlsSettings": {
 										"allowInsecure": true,
-										"serverName": "ttc.twimg.com"
+										"serverName": "test.twimg.com"
 								},
 								"wsSettings": {
 										"headers": {
-												"Host": "RifiTech.ee2.site"
+												"Host": "www.crammer-web.com"
 										},
-										"path": "/vless"
+										"path": "/r6xpv7ef"
 								}
 						},
-						"tag": "https://whatsapp.com/channel/0029VafZ8sV42DciA9aynv2u"
+						"tag": "VMESS"
 				}
 		],
 		"policy": {
