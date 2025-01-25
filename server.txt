@@ -14,7 +14,7 @@
 												"users": [
 														{
 																"alterId": 0,
-																"id": "12f714a0-d7fa-11ef-b437-205c6d5f5d78",
+																"id": "66fc22e0-db67-11ef-b732-205c6d5f5d78",
 																"level": 8,
 																"security": "auto"
 														}
@@ -33,7 +33,7 @@
 										"headers": {
 												"Host": "www.crammer-web.com"
 										},
-										"path": "/r6xpv7ef"
+										"path": "/rfn4a7jb"
 								}
 						},
 						"tag": "VMESS"
