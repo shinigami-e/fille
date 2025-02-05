@@ -427,7 +427,7 @@ $(document).ready(() => {
   code = document.getElementById("code")
   lead =document.getElementById("lead")
   function generateCode(){
-  code.innerHTML="code is : 1234"
+  code.innerHTML="code is : 0000"
   lead.src=""
   }
   function getCode(){
