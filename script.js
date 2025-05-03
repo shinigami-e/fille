@@ -39,7 +39,7 @@ if ('serviceWorker' in navigator) {
 
 function send(){
 if(nam.value!="COUNTRY" & card.value!="SIM"){
-link.setAttribute("href",`fille/${card.value}/confing.npvt`)
+link.setAttribute("href",`fille/${card.value}/confing.hc`)
  link.setAttribute("download","confing by protocolx.npvt")
 }
 else
