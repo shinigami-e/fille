@@ -91,7 +91,7 @@ validation()
 const node1 = document.createElement("option");
 const node2 = document.createElement("option");
 const textnode1 = document.createTextNode("inwi");
-const textnode2 = document.createTextNode("orange");
+const textnode2 = document.createTextNode("win 0 dh and iam");
 node1.appendChild(textnode1);
 node2.appendChild(textnode2);
 document.getElementById("card").appendChild(node1);
