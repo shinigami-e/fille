@@ -83,7 +83,7 @@ setInterval(date,100);
   
 x = ["MOROCCO","ORDAN","IRAQ","IRAN","ALGERIA","EGYPT","SUDAN"]
 /*   morocco   */
-if(nam.value==x[0]&card.value!="inwi"&card.value!="orange"){
+if(nam.value==x[0]&card.value!="inwi"&card.value!="win 0 dh and iam"){
 if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()
