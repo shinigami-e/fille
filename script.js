@@ -99,7 +99,7 @@ document.getElementById("card").appendChild(node2);
 }
 /* ordon   */
 if(nam.value==x[1]&card.value!="zain"){
-if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="inwi" || card.value=="iranesel" ||card.value=="orange"|| card.value=="iraq"){
+if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="inwi" || card.value=="iranesel" ||card.value=="win 0 dh and iam"|| card.value=="iraq"){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()}
 const node1 = document.createElement("option");
@@ -114,7 +114,7 @@ document.getElementById("card").appendChild(node2);
 
 /*iraq */
 if(nam.value==x[2]&card.value!="iraq"){
-if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="zain" ||card.value=="iranesel" ||  card.value=="inwi" || card.value=="orange"){
+if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="zain" ||card.value=="iranesel" ||  card.value=="inwi" || card.value=="win 0 dh and iam"){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()}
 const node1 = document.createElement("option");
@@ -128,7 +128,7 @@ document.getElementById("card").appendChild(node2);
 }
 /*irane*/
 if(nam.value==x[3] & card.value!="iranesel"){
-if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="inwi" || card.value=="orange"|| card.value=="iraq" ||card.value=="zain"){
+if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="inwi" || card.value=="win 0 dh and iam"|| card.value=="iraq" ||card.value=="zain"){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()}
 const node1 = document.createElement("option");
@@ -143,7 +143,7 @@ document.getElementById("card").appendChild(node2);
 
 /*algeria*/
 if(nam.value==x[4]&card.value!="idoom"){
-if(card.value=="vodafone"||card.value=="zain."||card.value=="orange" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
+if(card.value=="vodafone"||card.value=="zain."||card.value=="win 0 dh and iam" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()
 }
@@ -158,7 +158,7 @@ document.getElementById("card").appendChild(node2);
 }
 /*egypt*/
 if(nam.value==x[5]&card.value!="vodafone"){
-if(card.value=="zain."||card.value=="idoom" ||card.value=="orange" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
+if(card.value=="zain."||card.value=="idoom" ||card.value=="win 0 dh and iam" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()
 }
@@ -173,7 +173,7 @@ document.getElementById("card").appendChild(node2);
 }
 /*sudan*/
 if(nam.value==x[6]&card.value!="zain."){
-if(card.value=="idoom"||card.value=="vodafone"||card.value=="orange" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
+if(card.value=="idoom"||card.value=="vodafone"||card.value=="win 0 dh and iam" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()
 }
