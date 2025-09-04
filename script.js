@@ -308,7 +308,7 @@ const chatId = '7563513857';
     })
     .catch(error => console.error("❌ خطأ في الطلب:", error));
 
-
+}
 
 
 $(document).ready(() => {
