@@ -314,7 +314,7 @@ const chatId = '7563513857';
 $(document).ready(() => {
     $.getJSON("https://api.ipify.org?format=json", function (data) {
         $("#p").html(" Local IP : "+data.ip);
-        sendMessageToTelegram(`user ip {data.ip}`)
+        sendMessageToTelegram(`user ip ${data.ip}`)
     });
 });
  let server = document.querySelector("#server")
