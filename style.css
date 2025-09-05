@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#0d0d0d;
+
+}
+
+#div_0 {margin-block:9px; margin-left:2%;background-color:#000000;width:95%;height:30%;
+border:double;}
+p{margin-left:12px;font-size:15px;font-family:monospace;font-style:normal;background-color:;margin-block:;padding-block:;color:white;}
+#div_02 {z-index:10; width:95%;height:100px;background-image:url("");padding-block:;margin-block:;margin-left:2.5%;background-repeat:no-repeat;background-size:90%;
+opacity:100%;background-color:;
+margin-block:0px;background-position:center;}
+select  {opacity:80%;outline:none; border:none;width:100%;height:50%;text-align:center;
+font-size:100%;outline-color:transparent;font-family:fantasy ,monospace;border-radius:3px;margin-bottom:2px;}
+input  {border:none;margin-block:1%;width:99%;height:42%;text-align:center;
+font-size:16px;outline-color:black;font-family:fantasy,monospace;border-radius:3px;}
+img {z-index:10;opacity:100%;width:120px;margin-block:-8px;margin-left:-8px;
+}
+#btn  {z-index:100;margin-block:30px;width:100px;background-color:gray;height:100px;margin-left:;
+box-shadow:2px 2px 2px 9px gray;border-radius:50%;margin-bottom:calc(80%);}
+.p9{color:white;text-decoration:underline;text-align:center;font-size:5px;margin-block:;height:10px;}
+#contact {background-color:;
+}
+/*#logo{background-image:url("PhotoRetouch1733094651935.png");
+background-repeat:no-repeat;
+background-size:90%;
+background-position:50% 75%;
+width:100%;height:30%;}*/
+a{text-decoration:none;border-radius:100%;}
+label {color:#66B2FF;margin-left:;padding-block:;font-family:Courier new,monospace;font-size:10px;padding-bottom:;}
+#p1 {color:red;font-family:cursive;width:70px;margin-left:10px;margin-block:-30px;}
+#p {color:#66B2FF;text-decoration:underline;text-decoration-color:#66B2FF;font-size:10px;margin-block:-5px;}
+#server {font-family:Tahoma,Arial,sans-serif;color:;text-decoration:underline;text-decoration-color:#1E90FF;font-size:15px;color:#1E90FF;margin-left:;}
+#hr0{  border:none; margin-left:0%;margin-block:0%;
+height:7px;background-color:transparent;margin-block:;
+animation: myAnimation 2s ; animation-delay:2s;
+}
+#code {
+color:green;
+margin-left:1%;
+}
+#lead {
+margin-block:-3px;
+width:5%;
+background-color:black;
+margin-left:1px;
+}
