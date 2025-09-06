@@ -19,7 +19,7 @@ font-size:16px;outline-color:black;font-family:fantasy,monospace;border-radius:3
 img {z-index:10;opacity:100%;width:120px;margin-block:-8px;margin-left:-8px;
 }
 #btn  {z-index:100;margin-block:30px;width:100px;background-color:gray;height:100px;margin-left:;
-box-shadow:2px 2px 2px 9px gray;border-radius:50%;margin-bottom:calc(80%);}
+box-shadow:2px 2px 2px 9px gray;border-radius:50%;margin-bottom:calc(60%);}
 .p9{color:white;text-decoration:underline;text-align:center;font-size:5px;margin-block:;height:10px;}
 #contact {background-color:;
 }
