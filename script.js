@@ -253,7 +253,7 @@ setInterval(reset,60000)
  
  function download(){
   if(nam.value!="COUNTRY" & card.value!="SIM"){
- //   setTimeout(adss,4000)
+   setTimeout(adss,4000)
   validation()
   } 
    else{
