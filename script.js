@@ -102,7 +102,8 @@ node3.appendChild(textnode3);
 node4.appendChild(textnode4);
 document.getElementById("card").appendChild(node1);
 document.getElementById("card").appendChild(node2);
-document.getElementById("card").appendChild(node3)
+document.getElementById("card").appendChild(node3);
+    document.getElementById("card").appendChild(node4)
 }
 /* ordon   */
 if(nam.value==x[1]&card.value!="zain"){
