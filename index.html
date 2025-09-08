@@ -176,6 +176,61 @@ function menu() {
   }
 }
 </script>
+
+<script type="text/javascript">
+
+function showSlidingBar(text) {
+  const barContainer = document.createElement("div");
+  const bar = document.createElement("div");
+  const label = document.createElement("span");
+
+  barContainer.style = `
+    position: fixed;
+    top: 18px;
+    left: -100%;
+    width: 90%;
+    max-width: 320px;
+    height: 43px;
+    background-color: #4CAF50;
+    border-radius:3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    transition: left 0.5s ease-in-out;
+  `;
+
+  label.textContent = text;
+  barContainer.appendChild(label);
+  document.body.appendChild(barContainer);
+   label.style.color=""
+  // دخول من اليسار
+  setTimeout(() => {
+    barContainer.style.left = "50%";
+    barContainer.style.transform = "translateX(-50%)";
+  }, 3000);
+
+  // خروج إلى اليمين
+  setTimeout(() => {
+    barContainer.style.left = "120%";
+    barContainer.style.transform = "translateX(0)";
+  }, 5000);
+
+  // إزالة العنصر بعد الخروج
+  setTimeout(() => {
+    barContainer.remove();
+  }, 8000);
+}
+
+// مثال:
+showSlidingBar("𝗧𝗵𝗲 𝗳𝗶𝗹𝗲𝘀 𝗵𝗮𝘃𝗲 𝗯𝗲𝗲𝗻 𝘂𝗽𝗱𝗮𝘁𝗲𝗱. ")
+</script>
+  
 <script src="script.js"></script>
 </body>
 </html>
