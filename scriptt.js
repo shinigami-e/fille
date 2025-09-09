@@ -78,128 +78,27 @@ setInterval(date,100);
  let link = document.querySelector("#link")
   let label = document.querySelector("#label")
   
-  function countryy(){
+    function countryy(){
   validation()
-  
 x = ["MOROCCO","ORDAN","IRAQ","IRAN","ALGERIA","EGYPT","SUDAN"]
-/*   morocco   */
-if(nam.value==x[0]&card.value!="inwi"&card.value!="win 0 dh and iam"){
-if(card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
-card.innerHTML=`<select><option>SIM</option></select>`
+
+if(nam.value==x[0]&&card.value=="SIM"){
 validation()
-}
 const node1 = document.createElement("option");
-//const node2 = document.createElement("option");
 const node3 = document.createElement("option");
 const textnode1 = document.createTextNode("inwi");
-//const textnode2 = document.createTextNode("win 0 dh");
 const textnode3 = document.createTextNode("iam");
 node1.appendChild(textnode1);
-//node2.appendChild(textnode2);
 node3.appendChild(textnode3)
 document.getElementById("card").appendChild(node1);
-//document.getElementById("card").appendChild(node2);
 document.getElementById("card").appendChild(node3)
 }
-/* ordon   */
-if(nam.value==x[1]&card.value!="zain"){
-if(card.value=="iam" ||card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="inwi" || card.value=="iranesel" ||card.value=="win 0 dh and iam"|| card.value=="iraq"){
-card.innerHTML=`<select><option>SIM</option></select>`
-validation()}
-const node1 = document.createElement("option");
-const node2 = document.createElement("option");
-const textnode1 = document.createTextNode("zain");
-const textnode2 = document.createTextNode("zain");
-node1.appendChild(textnode1);
-node2.appendChild(textnode2);
-document.getElementById("card").appendChild(node1);
-document.getElementById("card").appendChild(node2);
-}
-
-/*iraq */
-if(nam.value==x[2]&card.value!="iraq"){
-if(card.value=="iam" ||card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="zain" ||card.value=="iranesel" ||  card.value=="inwi" || card.value=="win 0 dh and iam"){
-card.innerHTML=`<select><option>SIM</option></select>`
-validation()}
-const node1 = document.createElement("option");
-const node2 = document.createElement("option");
-const textnode1 = document.createTextNode("iraq");
-const textnode2 = document.createTextNode("iraq");
-node1.appendChild(textnode1);
-node2.appendChild(textnode2);
-document.getElementById("card").appendChild(node1);
-document.getElementById("card").appendChild(node2);
-}
-/*irane*/
-if(nam.value==x[3] & card.value!="iranesel"){
-if(card.value=="iam" ||card.value=="zain."||card.value=="idoom"||card.value=="vodafone"||card.value=="inwi" || card.value=="win 0 dh and iam"|| card.value=="iraq" ||card.value=="zain"){
-card.innerHTML=`<select><option>SIM</option></select>`
-validation()}
-const node1 = document.createElement("option");
-const node2 = document.createElement("option");
-const textnode1 = document.createTextNode("iranesel");
-const textnode2 = document.createTextNode("iranesel");
-node1.appendChild(textnode1);
-node2.appendChild(textnode2);
-document.getElementById("card").appendChild(node1);
-document.getElementById("card").appendChild(node2);
-}
-
-/*algeria*/
-if(nam.value==x[4]&card.value!="idoom"){
-if(card.value=="iam" ||card.value=="vodafone"||card.value=="zain."||card.value=="win 0 dh and iam" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
-card.innerHTML=`<select><option>SIM</option></select>`
-validation()
-}
-const node1 = document.createElement("option");
-const node2 = document.createElement("option");
-const textnode1 = document.createTextNode("idoom");
-const textnode2 = document.createTextNode("idoom");
-node1.appendChild(textnode1);
-node2.appendChild(textnode2);
-document.getElementById("card").appendChild(node1);
-document.getElementById("card").appendChild(node2);
-}
-/*egypt*/
-if(nam.value==x[5]&card.value!="vodafone"){
-if(card.value=="iam" ||card.value=="zain."||card.value=="idoom" ||card.value=="win 0 dh and iam" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
-card.innerHTML=`<select><option>SIM</option></select>`
-validation()
-}
-const node1 = document.createElement("option");
-const node2 = document.createElement("option");
-const textnode1 = document.createTextNode("vodafone");
-const textnode2 = document.createTextNode("vodafone");
-node1.appendChild(textnode1);
-node2.appendChild(textnode2);
-document.getElementById("card").appendChild(node1);
-document.getElementById("card").appendChild(node2);
-}
-/*sudan*/
-if(nam.value==x[6]&card.value!="zain."){
-if(card.value=="iam" ||card.value=="idoom"||card.value=="vodafone"||card.value=="win 0 dh and iam" ||card.value=="inwi"||card.value=="zain"|| card.value=="iraq"||card.value=="iranesel" ){
-card.innerHTML=`<select><option>SIM</option></select>`
-validation()
-}
-const node1 = document.createElement("option");
-const node2 = document.createElement("option");
-const textnode1 = document.createTextNode("zain.");
-const textnode2 = document.createTextNode("zain.");
-node1.appendChild(textnode1);
-node2.appendChild(textnode2);
-document.getElementById("card").appendChild(node1);
-document.getElementById("card").appendChild(node2);
-}
-/*else*/
-
-
-
-
 if(nam.value=="COUNTRY"){
 card.innerHTML=`<select><option>SIM</option></select>`
 validation()
 }
 }
+
 
   
   
