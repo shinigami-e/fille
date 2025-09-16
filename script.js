@@ -439,5 +439,5 @@ $(document).ready(() => {
  setInterval(ext,500)
  
  function adss(){
-// window.location.href='https://flaredishwater.com/bhya564x0?key=7e322cf798caffa958cbc6c182602de2'
+// window.location.href='https://flaredishwater.com/axufdhpz?key=0e30c1ac362555061d3965a7db8aa0d1'
  }
