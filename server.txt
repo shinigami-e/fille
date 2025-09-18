@@ -1,1 +1,49 @@
 
+---------server maroc Telecom--------
+
+{
+  "inbounds": [],
+  "outbounds": [
+    {
+      "mux": {
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "click.snapchat.com",
+            "level": 8,
+            "password": "c211a452-050d-4ccc-8a8e-39b2df7181fb",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "vps-00.ha-vps.store"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-00.ha-vps.store"
+          },
+          "path": "/whatever/trojan-ws"
+        }
+      },
+      "tag": "TROJAN"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
+}
