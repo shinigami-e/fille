@@ -1,5 +1,5 @@
 
----------server maroc Telecom--------
+--------------server maroc Telecom-------------
 
 {
   "inbounds": [],
