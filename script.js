@@ -487,7 +487,7 @@ barre()
   nnewDiv.setAttribute("onclick","subsc()")
   
   a = document.createElement("a")
-  a.setAttribute("href","https://www.instagram.com/moham_ed_yamni?igsh=c3VibmQwM2Y3YWo5")
+  a.setAttribute("href","")
  a.append(nnewDiv)
   nnewDiv.append(newh3)
   body.append(a)
