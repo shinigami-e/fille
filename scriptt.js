@@ -86,12 +86,17 @@ if(nam.value==x[0]&&card.value=="SIM"){
 validation()
 const node1 = document.createElement("option");
 const node3 = document.createElement("option");
+    const node2 = document.createElement("option");
 const textnode1 = document.createTextNode("inwi");
+ const textnode2 = document.createTextNode("win 0 dh");
 const textnode3 = document.createTextNode("iam");
 node1.appendChild(textnode1);
 node3.appendChild(textnode3)
+ node2.appendChild(textnode2)
 document.getElementById("card").appendChild(node1);
 document.getElementById("card").appendChild(node3)
+document.getElementById("card").appendChild(node2)
+    
 }
 if(nam.value=="COUNTRY"){
 card.innerHTML=`<select><option>SIM</option></select>`
