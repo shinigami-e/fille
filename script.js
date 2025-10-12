@@ -419,7 +419,7 @@ barre()
                 }
                 
                 }
- server.setAttribute("onclick",`servver()`);
+// server.setAttribute("onclick",`servver()`);
  
   function barre(){
   const styleSheet = document.styleSheets[0];
