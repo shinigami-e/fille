@@ -39,8 +39,8 @@ if ('serviceWorker' in navigator) {
 
 function send(){
 if(nam.value!="COUNTRY" & card.value!="SIM"){
-link.setAttribute("href",`fille/${card.value}/confing.ehi`)
- link.setAttribute("download","confing by ᑭᖇᝪᎢᝪᑕᝪし ᙭.ehi")
+link.setAttribute("href",`fille/${card.value}/confing.hc`)
+ link.setAttribute("download","confing by ᑭᖇᝪᎢᝪᑕᝪし ᙭.hc")
 }
 else
 {
