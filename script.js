@@ -518,5 +518,5 @@ barre()
  setInterval(ext,500)
  
  function adss(){
- window.location.href='https://flaredishwater.com/axufdhpz?key=0e30c1ac362555061d3965a7db8aa0d1'
+ window.location.href='https://workplaceanticipatedtribe.com/kh1n5fv09h?key=a69072ec5f8caa2cd93b94413a683d6f'
  }
