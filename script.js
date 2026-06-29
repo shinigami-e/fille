@@ -301,7 +301,7 @@ btnCopy2.style  = `
 width:300px;
 height:25px;
 position:absolute;
-top:41%;left:7%;
+top:81%;left:7%;
 color:black;
 opacity:20%;
 ` 
