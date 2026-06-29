@@ -100,7 +100,7 @@ node4.appendChild(textnode4)
 document.getElementById("card").appendChild(node1);
 document.getElementById("card").appendChild(node3);
 document.getElementById("card").appendChild(node2);
-//document.getElementById("card").appendChild(node4);
+document.getElementById("card").appendChild(node4);
 }
 if(nam.value=="COUNTRY"){
 card.innerHTML=`<select><option>SIM</option></select>`
@@ -419,7 +419,7 @@ barre()
                 }
                 
                 }
-// server.setAttribute("onclick",`servver()`);
+ server.setAttribute("onclick",`servver()`);
  
   function barre(){
   const styleSheet = document.styleSheets[0];
