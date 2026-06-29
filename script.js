@@ -309,7 +309,7 @@ btnCencel.style = `
 width:80px;
 height:30px;
 position:absolute;
-top:70%;left:40%;
+top:90%;left:40%;
 color:black;
 opacity:20%;
 `
@@ -317,7 +317,7 @@ text2.style=`
 max-height:; /* تحديد أقصى ارتفاع للعنصر */
 overflow-y: scroll; /* تمكين التمرير العمودي إذا كان النص كبيرًا */
 border:; /* إضافة حدود لعنصر */
-margin-block:-150px;
+margin-block:-120px;
 
 `
 
