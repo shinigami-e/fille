@@ -301,7 +301,7 @@ btnCopy2.style  = `
 width:300px;
 height:25px;
 position:absolute;
-top:61%;left:7%;
+top:41%;left:7%;
 color:black;
 opacity:20%;
 ` 
@@ -348,7 +348,7 @@ nameServer1.style.border="none"
 nameServer1.style.position='fixed'
 text.style.color="#3399FF"
 text.style.width="95%"
-text.style.height="85%"
+text.style.height="55%"
 text.style.textAlign="center"
 text.style.backgroundColor=""
 text.style.fontSize="10px"
@@ -357,7 +357,7 @@ text.style.zIndex=10
 
 text2.style.color="#3399FF"
 text2.style.width="95%"
-text2.style.height="85%"
+text2.style.height="55%"
 text2.style.textAlign="center"
 text2.style.backgroundColor=""
 text2.style.fontSize="10px"
