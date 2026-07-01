@@ -270,14 +270,14 @@ body = document.getElementById("body")
 newDiv = document.createElement("div")
 newDiv.style=`
 position:fixed;
-margin-block:-30%; margin-left:-0.5%;background-color:black;width:95%;height:63%;
+margin-block:-30%; margin-left:-0.5%;background-color:black;width:95%;height:73%;
 border:double;border-color:black;
 z-index:60; 
 opacity:100%;
 background-image:url('img/loading_nqrtqvns.gif');
 background-size:80%;
 background-repeat:no-repeat;
-background-position:center;
+background-position:70%;
 padding-top:40px;
 `
 
