@@ -1,5 +1,21 @@
 Inwi ★ 6
-id1.sshmaxid2.my.id:80@bayu:4820990f
+
+82.38.4.24:1-65535@openvpn-ssh.com-AhmadGermany7:12345678
+
+162.19.228.216:1-65535@openvpn-ssh.com-AhmadGermany4:12345678
+
+vip.th.2.internett.online:80@appThaiRungVPN2
+
+appidavpn.idavpn.win:80@adman:adman
+
+
+th3.i-have.xyz:80@allnew:123456
+
+sp.vwarnet.qzz.io@hero:zaidi
+
+sp.vwarnet.qzz.io:80@ssh:zaidi
+
+
 
 Win 0 dh
 sedekah.riftsv4.my.id:1-65535@rifganss1801:v80000
