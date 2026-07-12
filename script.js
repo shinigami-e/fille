@@ -88,18 +88,22 @@ const node1 = document.createElement("option");
 const node2 = document.createElement("option");
 const node3 = document.createElement("option");
 const node4 = document.createElement("option");
+const node5 = document.createElement("option");
 const textnode1 = document.createTextNode("inwi");
 const textnode2 = document.createTextNode("win 0 dh");
 const textnode3 = document.createTextNode("iam");
-const textnode4 = document.createTextNode("orange 0 dh");
+const textnode4 = document.createTextNode("orange");
+const textnode5 = document.createTextNode("orange 0 dh");
 node1.appendChild(textnode1);
 node2.appendChild(textnode2);
 node3.appendChild(textnode3);
 node4.appendChild(textnode4)
+node5.appendChild(textnode5)
 document.getElementById("card").appendChild(node1);
 document.getElementById("card").appendChild(node3);
-//document.getElementById("card").appendChild(node2);
+document.getElementById("card").appendChild(node2);
 document.getElementById("card").appendChild(node4);
+document.getElementById("card").appendChild(node5);
 }
 if(nam.value=="COUNTRY"){
 card.innerHTML=`<select><option>SIM</option></select>`
