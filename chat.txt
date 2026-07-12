@@ -1,2 +1,1 @@
-{"id":"1783823837_6a52fddd118bf","pseudo":"Anonyme194","content":"cv","timestamp":"2026-07-11 22:37:17","ip":"194.163.186.165"}
 {"id":"1783823895_6a52fe1716457","pseudo":"Anonyme194","content":"Bb","timestamp":"2026-07-11 22:38:15","ip":"194.163.186.165"}
