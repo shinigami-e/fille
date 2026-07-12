@@ -1,239 +1,744 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta name="google" content="notranslate">
-<meta name="theme-color" content="black">
-  <meta name="msapplication-TileColor" content="#3498db">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/x-icon" href="img/protocolx1.png">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONFING</title>
-<link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Hacking Community - Terminal</title>
+    <style>
+        /* ============================================
+           DARK THEME - LINUX STYLE
+           ============================================ */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #0d1520;
+            --bg-terminal: #0a0e17;
+            --text-primary: #00ff41;
+            --text-secondary: #00cc33;
+            --text-muted: #008822;
+            --text-dim: #004400;
+            --border-color: #00ff41;
+            --glow-color: rgba(0, 255, 65, 0.3);
+            --accent-red: #ff0040;
+            --accent-blue: #00aaff;
+            --accent-purple: #aa00ff;
+        }
+
+        body {
+            font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+            background: var(--bg-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: var(--text-primary);
+            overflow: hidden;
+        }
+
+        /* ============================================
+           TERMINAL HEADER
+           ============================================ */
+        
+        .terminal-header {
+            background: var(--bg-secondary);
+            border-bottom: 2px solid var(--border-color);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .terminal-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .terminal-title .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-shadow: 0 0 20px var(--glow-color);
+            animation: blink 2s infinite;
+        }
+
+        .terminal-title .logo span {
+            color: var(--accent-red);
+        }
+
+        .terminal-title .version {
+            font-size: 12px;
+            color: var(--text-muted);
+            background: rgba(0, 255, 65, 0.05);
+            padding: 2px 10px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 255, 65, 0.1);
+        }
+
+        .terminal-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .terminal-controls .dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-controls .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .dot-red {
+            background: #ff5f56;
+            box-shadow: 0 0 10px rgba(255, 95, 86, 0.3);
+        }
+        .dot-yellow {
+            background: #ffbd2e;
+            box-shadow: 0 0 10px rgba(255, 189, 46, 0.3);
+        }
+        .dot-green {
+            background: #27c93f;
+            box-shadow: 0 0 10px rgba(39, 201, 63, 0.3);
+        }
+
+        .terminal-controls .dot:hover {
+            transform: scale(1.2);
+        }
+
+        .terminal-status {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 65, 0.15);
+            background: rgba(0, 255, 65, 0.03);
+        }
+
+        .status-light {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--text-primary);
+            box-shadow: 0 0 15px var(--glow-color);
+            animation: pulse 2s infinite;
+        }
+
+        .terminal-status .status-text {
+            letter-spacing: 1px;
+        }
+
+        .terminal-status .status-text .highlight {
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        /* ============================================
+           INFO BAR
+           ============================================ */
+        
+        .info-bar {
+            background: rgba(0, 255, 65, 0.02);
+            border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+            padding: 6px 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .info-bar .info-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .info-bar .info-item .label {
+            color: var(--text-dim);
+        }
+
+        .info-bar .info-item .value {
+            color: var(--text-secondary);
+        }
+
+        /* ============================================
+           IFRAME
+           ============================================ */
+        
+        .iframe-container {
+            flex: 1;
+            position: relative;
+            background: var(--bg-terminal);
+            overflow: hidden;
+        }
+
+        .iframe-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(0deg, rgba(0, 255, 65, 0.02) 0%, transparent 100%),
+                radial-gradient(circle at 50% 0%, rgba(0, 255, 65, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #0a0e17;
+            display: block;
+            position: relative;
+            z-index: 0;
+        }
+
+        /* Scanline effect */
+        .iframe-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 255, 65, 0.01) 2px,
+                rgba(0, 255, 65, 0.01) 4px
+            );
+            pointer-events: none;
+            z-index: 2;
+            animation: scanlines 8s linear infinite;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        
+        .terminal-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid rgba(0, 255, 65, 0.08);
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .terminal-footer .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .terminal-footer .footer-left .prompt {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .terminal-footer .footer-left .prompt span {
+            color: var(--accent-red);
+        }
+
+        .terminal-footer .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .terminal-footer .footer-right .key {
+            color: var(--text-dim);
+            background: rgba(0, 255, 65, 0.03);
+            padding: 2px 8px;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 255, 65, 0.05);
+            font-size: 10px;
+        }
+
+        .terminal-footer .footer-right .key kbd {
+            color: var(--text-secondary);
+            font-weight: 700;
+        }
+
+        /* ============================================
+           ANIMATIONS
+           ============================================ */
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.4;
+                transform: scale(0.8);
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes scanlines {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(4px);
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* ============================================
+           MATRIX RAIN EFFECT (background)
+           ============================================ */
+        
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.03;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(0, 255, 65, 0.02) 30px,
+                    rgba(0, 255, 65, 0.02) 31px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(0, 255, 65, 0.01) 30px,
+                    rgba(0, 255, 65, 0.01) 31px
+                );
+        }
+
+        /* ============================================
+           LOADING OVERLAY
+           ============================================ */
+        
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loading-overlay .loader-text {
+            font-size: 18px;
+            color: var(--text-primary);
+            text-shadow: 0 0 30px var(--glow-color);
+            margin-bottom: 20px;
+        }
+
+        .loading-overlay .loader-text .cursor {
+            animation: blink 1s infinite;
+        }
+
+        .loading-bar {
+            width: 300px;
+            height: 2px;
+            background: rgba(0, 255, 65, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.05);
+        }
+
+        .loading-bar .progress {
+            height: 100%;
+            width: 0%;
+            background: var(--text-primary);
+            box-shadow: 0 0 20px var(--glow-color);
+            animation: loadProgress 2s ease-in-out forwards;
+        }
+
+        @keyframes loadProgress {
+            0% { width: 0%; }
+            20% { width: 15%; }
+            40% { width: 35%; }
+            60% { width: 55%; }
+            80% { width: 75%; }
+            95% { width: 90%; }
+            100% { width: 100%; }
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        
+        @media (max-width: 768px) {
+            .terminal-header {
+                padding: 8px 12px;
+            }
+            
+            .terminal-title .logo {
+                font-size: 18px;
+            }
+            
+            .terminal-title .version {
+                display: none;
+            }
+            
+            .terminal-status {
+                font-size: 11px;
+                padding: 3px 10px;
+            }
+            
+            .terminal-controls .dots {
+                display: none;
+            }
+            
+            .info-bar {
+                font-size: 10px;
+                padding: 4px 12px;
+            }
+            
+            .terminal-footer {
+                font-size: 10px;
+                padding: 5px 12px;
+            }
+            
+            .loading-bar {
+                width: 200px;
+            }
+            
+            .loading-overlay .loader-text {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .terminal-status .status-text {
+                font-size: 10px;
+            }
+            
+            .terminal-footer .footer-right .key {
+                display: none;
+            }
+            
+            .info-bar .info-item.hide-mobile {
+                display: none;
+            }
+        }
+    </style>
 </head>
-<body id="body" onload="">
-<!--<script type='text/javascript' src='//pl27584389.revenuecpmgate.com/13/d1/bb/13d1bb799f2790f85c4f1b23d68b6e31.js'></script>-->
-      <hr id="hr0" >
+<body>
 
-        <div id="div_0" >
-        <p>
+    <!-- ============================================
+    MATRIX BACKGROUND
+    ============================================ -->
+    <div class="matrix-bg"></div>
 
-     <img src="img/9784410.png" id="liste" onclick="menu()">
-
-         <label id="server" ><b>@SSH servers</b></label>   
-         <b id="code" >𝐢𝐏𝐡𝐨𝐧𝐞 → 𝐚𝐧𝐝𝐫𝐨𝐢𝐝 ⛈</b>  
-          
-              <br><br>
-ّ☣   2025  © 𝙚𝙋𝙧𝙤 𝘿𝙚𝙫. 𝙏𝙚𝙖𝙢 <span id="time" > </span><br>
-    
-        </p>
-       
+    <!-- ============================================
+    LOADING OVERLAY
+    ============================================ -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader-text">
+            <span class="cursor">➤</span> Initialisation du système...
         </div>
-        <div id="div_02" >
-        <select   id="nam" onchange="countryy()"> 
-              <option>COUNTRY</option>
-              <option>MOROCCO</option>
-           <!--   <option>ORDAN</option>
-              <option>IRAQ</option>
-              <option>IRAN</option>
-              <option>ALGERIA</option>
-              <option>EGYPT</option>
-              <option>SUDAN</option>-->
-              </select>
-              <br>
-        <select  id="card" onchange="countryy()"  > 
-        <option>SIM</option>
-        </select> 
+        <div class="loading-bar">
+            <div class="progress"></div>
         </div>
-       <center> 
-      <div id="btn" onclick="download()" > <a id="link"  ><img src="img/942472.png" ></a></div>
-      </center>
+        <div style="margin-top: 15px; font-size: 12px; color: var(--text-muted);">
+            v2.0.1 | Secure Shell Protocol
+        </div>
+    </div>
 
-      <div id="contact"  align="center"  > <center>
-     
-     <script type="text/javascript">
-     atOptions = {
-     'key' : 'bdbc919caf0a890da022fdcdfac26c04',
-     'format' : 'iframe',
-     'height' : 50,
-     'width' : 320,
-     'params' : {}
-     };
-     </script>
-     <script type="text/javascript" src="//flaredishwater.com/bdbc919caf0a890da022fdcdfac26c04/invoke.js"></script>
-      <a href="https://t.me/vps_gamer_gd" >
- <!--     <img src="img/protocolx1.png" id="p1"  >--> </a><br>
-      <label id="label" ></label><br>
+    <!-- ============================================
+    TERMINAL HEADER
+    ============================================ -->
+    <header class="terminal-header">
+        <div class="terminal-title">
+            <div class="logo">
+                <span>⚡</span> HACK<span>TERM</span>
+            </div>
+            <div class="version">v2.0.1</div>
+        </div>
+        
+        <div class="terminal-controls">
+            <div class="dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-status">
+                <span class="status-light"></span>
+                <span class="status-text">
+                    <span class="highlight">●</span> ONLINE — SECURE
+                </span>
+            </div>
+        </div>
+    </header>
 
-         <p id="p" > </p>
-            <b>   <p class="p9">جــمـيـع الـحـقـوق مـحـفـوضـة ©2024</p> </b></center>
-      </div>
-      <script type="text/javascript">
-      function menu() {
-      const body = document.body;
-      body.style.backgroundColor = "";
-      
-      const mymenu = document.createElement("div");
-      const myremenu = document.createElement("div");
-      const mylogo = document.createElement("img");
-      const links = [
-      { text: "✦ 𝗛𝗘𝗟𝗣", href: "#" },
-          { text: "✦ 𝗡𝗣𝗩 𝗧𝗨𝗡𝗡𝗘𝗟", href: "#" },
-      { text: "✦ 𝗛𝗧𝗧𝗣 𝗖𝗨𝗦𝗧𝗢𝗠", href: "index.html" }, 
-      { text: "✦ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦", href: "https://t.me/vps_gamer_gd" },
-      { text: "✦ 𝗔𝗕𝗢𝗨𝗧", href: "#" },
-      { text: "✦ 𝗨𝗣𝗗𝗔𝗧𝗘", href: "https://t.me/vps_gamer_gd" },
-      
-      ];
-      
-      mymenu.style = `
-      background-color: black;
-      width: 78%;
-      height: 750px;
-      margin: 0%;
-      z-index: 90;
-      position: absolute;
-      margin-block: -195%;
-      `;
-      
-      myremenu.style = `
-      background-color: white;
-      width: 100%;
-      height: 750px;
-      margin: 0%;
-      z-index: 89;
-      position: absolute;
-      margin-block: -195%;
-      opacity: 80%;
-      `;
-      
-      mylogo.src = "img/protocolx11.png";
-      mylogo.style = `
-      background-color: ;
-      width: 200px;
-      height: 200px;
-      margin: 0%;
-      z-index: ;
-      position: fixed;
-      margin-left: 10%;
-      margin-block: 30%;
-      `;
-      
-      links.forEach((link, index) => {
-      const mylink = document.createElement("a");
-      mylink.style = `
-      background-color: ;
-      width: 200px;
-      height: ;
-      margin: 0%;
-      z-index: ;
-      position: fixed;
-      margin-left: 18%;
-      margin-block: ${95 + index * 13}%;
-      opacity: 80%;
-      color: #C8CDD1;
-      `;
-            if(index==1){  
-    mylink.style.color="green"
-    }
-      mylink.href = link.href;
-      mylink.append(document.createTextNode(link.text));
-      mymenu.append(mylink);
-      });
-      
-      const versionLink = document.createElement("a");
-      versionLink.style = `
-      background-color: ;
-      color: red;
-      width: 200px;
-      height: ;
-      margin: 0%;
-      z-index: ;
-      position: fixed;
-      margin-left: 25%;
-      margin-block: 190%;
-      opacity: 20%;
-      `;
-      versionLink.append(document.createTextNode("𝑽𝒆𝒓𝒔𝒊𝒐𝒏 11.6.5"));
-      mymenu.append(versionLink);
-      
-      mymenu.appendChild(mylogo);
-      body.appendChild(mymenu);
-      body.appendChild(myremenu);
-      
-      myremenu.onclick = fermer;
-      
-      function fermer() {
-      mymenu.remove();
-      myremenu.remove();
-      }
-      }
-      </script>
+    <!-- ============================================
+    INFO BAR
+    ============================================ -->
+    <div class="info-bar">
+        <div class="info-item">
+            <span class="label">┌─[</span>
+            <span class="value">root@hacking-community</span>
+            <span class="label">]</span>
+            <span class="label">—[</span>
+            <span class="value">~</span>
+            <span class="label">]</span>
+        </div>
+        <div class="info-item hide-mobile">
+            <span class="label">⚡</span>
+            <span class="value">UPTIME: 42d 7h 23m</span>
+        </div>
+        <div class="info-item hide-mobile">
+            <span class="label">🔒</span>
+            <span class="value">SSL: ACTIVE</span>
+        </div>
+        <div class="info-item">
+            <span class="label">🌐</span>
+            <span class="value">x-vps.gamer.gd</span>
+        </div>
+    </div>
 
-<script type="text/javascript">
+    <!-- ============================================
+    IFRAME CONTAINER
+    ============================================ -->
+    <div class="iframe-container">
+        <iframe 
+            src="https://x-vps.gamer.gd/" 
+            id="mainFrame"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe>
+    </div>
 
-function showSlidingBar(text) {
-  const barContainer = document.createElement("div");
-  const bar = document.createElement("div");
-  const label = document.createElement("span");
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="terminal-footer">
+        <div class="footer-left">
+            <span class="prompt">
+                <span>root</span>@hacking-community:~$
+            </span>
+            <span style="color: var(--text-dim);">|</span>
+            <span>✅ Connection established</span>
+        </div>
+        <div class="footer-right">
+            <span class="key">
+                <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> — DevTools
+            </span>
+            <span class="key">
+                <kbd>F11</kbd> — Fullscreen
+            </span>
+            <span style="color: var(--text-dim);">|</span>
+            <span style="color: var(--text-secondary);">
+                <span id="visitorCount">0</span> connected
+            </span>
+        </div>
+    </footer>
 
-  barContainer.style = `
-    position: fixed;
-    top: 18px;
-    left: -100%;
-    width: 90%;
-    max-width: 320px;
-    height: 43px;
-    background-color: #4CAF50;
-    border-radius:3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: sans-serif;
-    font-size: 13px;
-    transition: left 0.5s ease-in-out;
-  `;
+    <!-- ============================================
+    JAVASCRIPT
+    ============================================ -->
+    <script>
+        // ============================================
+        // LOADING SCREEN
+        // ============================================
+        
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }, 2500);
+        });
 
-  label.textContent = text;
-  barContainer.appendChild(label);
-  document.body.appendChild(barContainer);
-   label.style.color=""
-  // دخول من اليسار
-  setTimeout(() => {
-    barContainer.style.left = "50%";
-    barContainer.style.transform = "translateX(-50%)";
-  }, 3000);
+        // ============================================
+        // VISITOR COUNTER (simulé)
+        // ============================================
+        
+        function updateVisitorCount() {
+            const count = Math.floor(Math.random() * 15) + 5;
+            document.getElementById('visitorCount').textContent = count;
+        }
 
-  // خروج إلى اليمين
-  setTimeout(() => {
-    barContainer.style.left = "120%";
-    barContainer.style.transform = "translateX(0)";
-  }, 5000);
+        updateVisitorCount();
+        setInterval(updateVisitorCount, 30000);
 
-  // إزالة العنصر بعد الخروج
-  setTimeout(() => {
-    barContainer.remove();
-  }, 8000);
-}
+        // ============================================
+        // CONSOLE WELCOME MESSAGE
+        // ============================================
+        
+        console.log('%c⚡ HACKTERM v2.0.1', 'font-size: 24px; font-weight: bold; color: #00ff41;');
+        console.log('%c🔒 Secure Shell Connection Established', 'font-size: 14px; color: #00cc33;');
+        console.log('%c🌐 https://x-vps.gamer.gd/', 'font-size: 14px; color: #00aaff;');
+        console.log('%c─────────────────────────────────────────', 'color: #004400;');
+        console.log('%c💀 Welcome to the Hacking Community', 'font-size: 16px; color: #ff0040; font-weight: bold;');
+        console.log('%c─────────────────────────────────────────', 'color: #004400;');
+        console.log('%c🔧 Use Ctrl+Shift+I for DevTools', 'font-size: 12px; color: #008822;');
+        console.log('%c📡 Stay anonymous. Stay secure.', 'font-size: 12px; color: #008822;');
 
-// مثال:
-   var notf = new Date().getHours();
- if(notf>=21){
- showSlidingBar("𝗧𝗵𝗲 𝗳𝗶𝗹𝗲𝘀 𝗵𝗮𝘃𝗲 𝗯𝗲𝗲𝗻 𝘂𝗽𝗱𝗮𝘁𝗲𝗱. ")
- }
- 
-</script>
-  
-<script src="scriptt.js"></script>
+        // ============================================
+        // KEYBOARD SHORTCUTS
+        // ============================================
+        
+        document.addEventListener('keydown', function(e) {
+            // F11 - Fullscreen
+            if (e.key === 'F11') {
+                e.preventDefault();
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                } else {
+                    document.documentElement.requestFullscreen();
+                }
+            }
+            
+            // Ctrl+Shift+I - DevTools
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+                e.preventDefault();
+                console.log('%c🔓 DevTools opened', 'color: #00ff41;');
+                // Le navigateur gère l'ouverture des DevTools
+            }
+        });
+
+        // ============================================
+        // FULLSCREEN CHANGE EVENT
+        // ============================================
+        
+        document.addEventListener('fullscreenchange', function() {
+            if (document.fullscreenElement) {
+                console.log('%c🖥️ Fullscreen mode activated', 'color: #00ff41;');
+            } else {
+                console.log('%c🪟 Fullscreen mode exited', 'color: #ffbd2e;');
+            }
+        });
+
+        // ============================================
+        // IFRAME LOAD EVENT
+        // ============================================
+        
+        document.getElementById('mainFrame').addEventListener('load', function() {
+            console.log('%c✅ Iframe loaded successfully', 'color: #27c93f;');
+        });
+
+        // ============================================
+        // MATRIX RAIN EFFECT (optional extra)
+        // ============================================
+        
+        function createMatrixEffect() {
+            const canvas = document.createElement('canvas');
+            canvas.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: -1;
+                opacity: 0.03;
+            `;
+            document.body.prepend(canvas);
+            
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+            
+            const chars = '01';
+            const fontSize = 14;
+            const columns = Math.floor(width / fontSize);
+            const drops = [];
+            
+            for (let i = 0; i < columns; i++) {
+                drops[i] = Math.floor(Math.random() * -100);
+            }
+            
+            function draw() {
+                ctx.fillStyle = 'rgba(10, 14, 23, 0.05)';
+                ctx.fillRect(0, 0, width, height);
+                
+                ctx.fillStyle = '#00ff41';
+                ctx.font = fontSize + 'px monospace';
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    
+                    if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+            }
+            
+            setInterval(draw, 50);
+        }
+
+        // Désactiver le rain effect pour éviter de ralentir
+        // createMatrixEffect();
+        
+        console.log('%c🚀 System ready. Welcome to the Hacking Community.', 'font-size: 14px; color: #00ff41;');
+    </script>
 </body>
-</html>
 </html>
