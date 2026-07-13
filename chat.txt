@@ -14,5 +14,4 @@
 {"id":"1783900749_6a542a4d80376","pseudo":"User10420749","content":"Kifach tari9a bach nl9ah","timestamp":"2026-07-12 19:59:09","ip":"104.28.165.222"}
 {"id":"1783900806_6a542a86ec141","pseudo":"User95110806","content":"Brek f contact us wsiftli f telegrame","timestamp":"2026-07-12 20:00:06","ip":"95.111.248.77"}
 {"id":"1783900862_6a542abeb3a2e","pseudo":"User10420861","content":"Kat9sd kayn flmajmo3a dyal l9nat telegram","timestamp":"2026-07-12 20:01:02","ip":"104.28.154.45"}
-{"id":"1783900897_6a542ae1ca52e","pseudo":"User95110889","content":"La rah kayn f application","timestamp":"2026-07-12 20:01:37","ip":"95.111.248.77"}
 {"id":"1783901739_6a542e2b2ea94","pseudo":"@TemuxNet","content":"La rah kayn f application Radi tbrek f confing lfo9 wradi tle3 lik sfha lwla dyal ttbi9 Atkhtar maroc flkhana lwla wlkhana Tanya iam wratbrek f telecharger wradi ydkhel","timestamp":"2026-07-12 20:15:39","ip":"95.111.248.77"}
