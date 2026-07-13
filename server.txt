@@ -1,0 +1,50 @@
+{
+		"inbounds": [
+				{
+						"port": "1080",
+						"protocol": "socks",
+						"settings": {
+								"auth": "noauth",
+								"udp": true
+						}
+				}
+		],
+		"outbounds": [
+				{
+						"mux": {
+								"enabled": false
+						},
+						"protocol": "vless",
+						"settings": {
+								"vnext": [
+										{
+												"address": "216.239.38.126",
+												"port": 443,
+												"users": [
+														{
+																"encryption": "none",
+																"flow": "",
+																"id": "bbbb2222-cccc-4ddd-8eee-ffffaaaaabbb",
+																"level": 8
+														}
+												]
+										}
+								]
+						},
+						"streamSettings": {
+								"network": "ws",
+								"security": "tls",
+								"tlsSettings": {
+										"allowInsecure": true,
+										"serverName": "pro-team-k2-404541555950.us-central1.run.app"
+								},
+								"wsSettings": {
+										"headers": {
+												"Host": "pro-team-k2-404541555950.us-central1.run.app"
+										},
+										"path": "/Telegram/@AM2_D3/@mujta1n"
+								}
+						}
+				}
+		]
+}
