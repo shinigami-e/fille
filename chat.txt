@@ -20,4 +20,3 @@
 {"id":"1783944161_6a54d3e1efa41","pseudo":"User10514161","content":"3ssila","timestamp":"2026-07-13 08:02:41","ip":"105.190.115.147","edited":true,"edited_at":"2026-07-13 08:02:54"}
 {"id":"1783944906_6a54d6ca8dae9","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"Hhh fen akhay 3ssila","timestamp":"2026-07-13 08:15:06","ip":"95.111.248.77"}
 {"id":"1783946214_6a54dbe62346e","pseudo":"User95116213","content":"sp.vwarnet.qzz.io:80@hero:zaidi  sp.vwarnet.qzz.io:80@ssh:zaidi","timestamp":"2026-07-13 08:36:54","ip":"95.111.248.77"}
-{"id":"1783956952_6a5505d8881f4","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"Cc","timestamp":"2026-07-13 11:35:52","ip":"95.111.248.77"}
