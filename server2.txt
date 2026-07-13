@@ -1,5 +1,6 @@
 Inwi ★ 6
 
+ms-vps.eyadvip.site:80@eyad:tech
 82.38.4.24:1-65535@openvpn-ssh.com-AhmadGermany7:12345678
 
 162.19.228.216:1-65535@openvpn-ssh.com-AhmadGermany4:12345678
