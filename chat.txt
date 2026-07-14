@@ -26,3 +26,4 @@
 {"id":"1783989616_6a5585702e063","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"162.19.228.216:1-65535@openvpn-ssh.com-AhmadGermany4:12345678","timestamp":"2026-07-13 20:40:16","ip":"95.111.248.77"}
 {"id":"1783992833_6a559201eb6f3","pseudo":"User13612833","content":"واش كين اورنج","timestamp":"2026-07-13 21:33:53","ip":"136.124.32.225"}
 {"id":"1784032380_6a562c7ca3807","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"Orange 🍊 ★  6 👇🏼","timestamp":"2026-07-14 08:33:00","ip":"103.14.76.130"}
+{"id":"1784032399_6a562c8f96c98","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"vless:\/\/bbbb2222-cccc-4ddd-8eee-ffffaaaaabbb@216.239.38.126:443?encryption=none&amp;amp;type=ws&amp;amp;host=pro-team-k2-243247764990.us-central1.run.app&amp;amp;headerType=none&amp;amp;path=%2FTelegram%2F%40AM2_D3%2F%40mujta1n&amp;amp;security=tls&amp;amp;sni=pro-team-k2-243247764990.us-central1.run.app ✏️","timestamp":"2026-07-14 08:33:19","ip":"103.14.76.130"}
