@@ -44,3 +44,4 @@
 {"id":"1784326211_6a5aa84394144","pseudo":"User19416211","content":"trojan:\/\/1b395778-d6a6-4b2a-8265-4a8ef3a1f927@104.18.37.127:443?path=%2Fwhatever%2Ftrojan-ws&amp;security=tls&amp;host=from-vps.sinko.dpdns.org&amp;type=ws&amp;sni=from-vps.sinko.dpdns.org#Trojan-vhim-GO%2BWS","timestamp":"2026-07-17 18:10:11","ip":"194.164.164.255","edited":true,"edited_at":"2026-07-17 18:18:27"}
 {"id":"1784327040_6a5aab80beb18","pseudo":"User14427040","content":"🙏🙏🙏","timestamp":"2026-07-17 18:24:00","ip":"144.217.164.217"}
 {"id":"1784331445_6a5abcb508440","pseudo":"User10571444","content":"مخدماش وين 0dh","timestamp":"2026-07-17 19:37:25","ip":"105.74.75.10"}
+{"id":"1784331925_6a5abe95e9dcc","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"جرب التحديت الجديد دبا  ديال win 0dh","timestamp":"2026-07-17 19:45:25","ip":"95.111.248.77"}
