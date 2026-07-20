@@ -53,4 +53,3 @@
 {"id":"1784509465_6a5d7419b173b","pseudo":"User17819465","content":"wss.ezaidifast.org:443@king:lolo","timestamp":"2026-07-19 21:04:25","ip":"178.18.252.72"}
 {"id":"1784512535_6a5d801704624","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"bilal.arkhilsmarty.co.uk:80@Bilal:7day","timestamp":"2026-07-19 21:55:35","ip":"85.190.99.80"}
 {"id":"1784551651_6a5e18e3c3d62","pseudo":"User41251650","content":"بغيت نبدل نجمة 6 نجمة 3","timestamp":"2026-07-20 08:47:31","ip":"41.251.185.129"}
-{"id":"1784588620_6a5ea94c63bc9","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"SSH UDP ACCOUNT 🧨  nl1.auronvpn.site:1-65535@auron-vdiavaiav:usvaja  id-atlas.suneku.web.id:1-65535@bansos:sunek  162.248.101.252:1-65535@Last:Time","timestamp":"2026-07-20 19:03:40","ip":"95.111.248.77"}
