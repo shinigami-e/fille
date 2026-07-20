@@ -1,5 +1,6 @@
 Inwi ★ 6
-wss.ezaidifast.org:443@king:lolo
+
+
 
 ms-vps.eyadvip.site:80@eyad:tech
 82.38.4.24:1-65535@openvpn-ssh.com-AhmadGermany7:12345678
