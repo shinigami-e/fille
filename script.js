@@ -494,7 +494,7 @@ barre()
   newh3.append(document.createTextNode("乂-ᐯ卩丂"))
   nnewDiv.style=`
   position:relative;
-  margin-block:-160%; margin-left:;background-color:black;width:100%;height:100%;
+  margin-block:-200%; margin-left:;background-color:black;width:100%;height:100%;
   border:double;border-color:black;
   z-index:100; 
   opacity:;
