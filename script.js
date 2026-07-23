@@ -491,7 +491,7 @@ barre()
   body = document.getElementById("body")
   nnewDiv = document.createElement("div")
   newh3 = document.createElement("p")
-  newh3.append(document.createTextNode(""))
+  newh3.append(document.createTextNode("乂-ᐯ卩丂"))
   nnewDiv.style=`
   position:relative;
   margin-block:-270%; margin-left:;background-color:black;width:100%;height:100%;
