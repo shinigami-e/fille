@@ -491,7 +491,7 @@ barre()
   body = document.getElementById("body")
   nnewDiv = document.createElement("div")
   newh3 = document.createElement("p")
-  newh3.append(document.createTextNode("مرحبًا ! 🤩 إذا كنت ترغب في الحصول على كلمة المرور الحصرية لموقعنا 🤫، لا تنسى متابعة حسابنا على انستقرام! 📸 سنقوم بنشر الكلمة السرية في قصصتنا، لذا تأكد من أنك تتابعنا للحصول على هذه الفرصة الفريدة! 💥 لا تفوت فرصة الحصول على كلمة المرور الحصرية! 🔓 متابعة حسابنا الآن وكن من بين الأوائل الذين يحصلون على الكلمة السرية ! 🚀 "))
+  newh3.append(document.createTextNode(""))
   nnewDiv.style=`
   position:relative;
   margin-block:-270%; margin-left:;background-color:black;width:100%;height:100%;
