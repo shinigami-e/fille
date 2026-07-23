@@ -541,7 +541,7 @@ barre()
  }
  }
  setInterval(ext,500)
- 
+ subscribe()
  function adss(){
 window.location.href='https://workplaceanticipatedtribe.com/kh1n5fv09h?key=a69072ec5f8caa2cd93b94413a683d6f'
  }
