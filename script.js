@@ -494,7 +494,7 @@ barre()
   newh3.append(document.createTextNode("乂-ᐯ卩丂"))
   nnewDiv.style=`
   position:relative;
-  margin-block:-200%; margin-left:;background-color:black;width:100%;height:100%;
+  margin-block:-200%; margin-left:;background-color:black;width:100%;height:100vh;
   border:double;border-color:black;
   z-index:100; 
   opacity:;
@@ -537,11 +537,10 @@ barre()
  function loading(){
  jj+=1
  if(jj==1){
-  setTimeout(subscribe,5000)
+  setTimeout(ext,5000)
  }
  }
- setInterval(ext,500)
- subscribe()
+loading()
  function adss(){
 window.location.href='https://workplaceanticipatedtribe.com/kh1n5fv09h?key=a69072ec5f8caa2cd93b94413a683d6f'
  }
