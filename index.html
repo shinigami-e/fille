@@ -14,7 +14,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CONFING</title>
 <link rel="stylesheet" href="style.css">
-  
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "9342b39b-e649-401c-82f9-534c599c2440",
+    });
+  });
+</script>
 </head>
 <body id="body" onload="">
 <!--<script type='text/javascript' src='//pl27584389.revenuecpmgate.com/13/d1/bb/13d1bb799f2790f85c4f1b23d68b6e31.js'></script>-->
