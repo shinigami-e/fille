@@ -543,3 +543,33 @@ barre()
  function adss(){
 window.location.href='https://workplaceanticipatedtribe.com/kh1n5fv09h?key=a69072ec5f8caa2cd93b94413a683d6f'
  }
+
+
+
+
+
+// script.js sur votre site GitHub Pages
+async function sendNotification(message) {
+    // Remplacez par l'URL complète de votre script sur InfinityFree
+    const proxyUrl = 'https://x-vps.gamer.gd/n.php';
+
+    try {
+        const response = await fetch(proxyUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: message })
+        });
+
+        const data = await response.json();
+        console.log('Notification envoyée avec succès !', data);
+        return data;
+    } catch (error) {
+        console.error("Erreur lors de l'envoi de la notification :", error);
+        throw error;
+    }
+}
+
+// Exemple d'utilisation
+sendNotification('Bonjour depuis mon site GitHub Pages !');
