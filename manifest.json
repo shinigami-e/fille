@@ -1,15 +1,23 @@
 {
-    "name": "HTTP Confing",
-    "short_name": "configuiration",
-    "start_url": "https://protocol-xxx.github.io/y/",
-    "display": "standalone",
-    "background_color": "#0d0d0d",
-    "theme_color": "#0d0d0d",
-    "icons": [
-      {
-        "src": "protocolx.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ]
-  }
+  "name": "Mon Site",
+  "short_name": "Site",
+  "start_url": "/fille/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "img/protocolx1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/protocolx1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
