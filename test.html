@@ -1,56 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>🧪 Test Notification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Manifest pour l'installation -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="img/protocolx1.png">
+    
+    <title>CONFIG</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- OneSignal SDK -->
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
         window.OneSignalDeferred = window.OneSignalDeferred || [];
         OneSignalDeferred.push(async function(OneSignal) {
             await OneSignal.init({
                 appId: "9342b39b-e649-401c-82f9-534c599c2440",
+                allowLocalhostAsSecureOrigin: true,
             });
-            console.log('✅ OneSignal initialisé');
-            document.getElementById('status').innerHTML = '✅ OneSignal prêt';
+            console.log('✅ OneSignal prêt');
+            
+            // Vérifier si déjà abonné
+            const status = await OneSignal.User.PushSubscription.getOptInStatus();
+            if (status) {
+                document.getElementById('subStatus').textContent = '✅ Abonné aux notifications';
+                document.getElementById('subStatus').style.color = '#7bed9f';
+            }
         });
     </script>
 </head>
-<body style="font-family: Arial; padding: 20px; background: #0a0a0a; color: white;">
-    <h1>🧪 Test de notification</h1>
-    <div id="status" style="color: yellow;">⏳ Chargement...</div>
-    <hr>
-    
-    <h3>📌 Étape 1 : S'abonner</h3>
-    <button onclick="subscribe()" style="padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        🔔 S'abonner aux notifications
-    </button>
-    <br><br>
-    
-    <h3>📤 Étape 2 : Envoyer une notification</h3>
-    <input id="msg" placeholder="Votre message" style="padding: 10px; width: 300px; border-radius: 5px; border: none;" value="Test depuis GitHub Pages">
-    <br><br>
-    <button onclick="sendTest()" style="padding: 10px 20px; background: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        🚀 Envoyer
-    </button>
-    
-    <div id="result" style="margin-top: 20px; padding: 10px; background: #1a1a1a; border-radius: 5px; font-size: 12px; white-space: pre-wrap; color: #aaa;"></div>
+<body>
+    <div style="font-family: Arial; padding: 20px; background: #0a0a0a; color: white; min-height: 100vh;">
+        <h1>📱 Votre Site</h1>
+        <p style="color: #aaa;">Site de configuration</p>
+        
+        <div id="subStatus" style="padding: 10px; background: #1a1a2e; border-radius: 8px; margin: 20px 0;">
+            ⏳ Vérification...
+        </div>
+        
+        <!-- BOUTON D'INSTALLATION POUR ANDROID -->
+        <div id="installBanner" style="display: none; background: #667eea; padding: 15px; border-radius: 10px; margin: 20px 0;">
+            <p style="margin: 0; font-weight: bold;">📲 Installer l'application</p>
+            <p style="margin: 5px 0 10px 0; font-size: 14px; opacity: 0.8;">Recevez les notifications même lorsque le navigateur est fermé</p>
+            <button onclick="installApp()" style="padding: 12px 30px; background: white; color: #1a1a2e; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">
+                📥 Installer
+            </button>
+        </div>
+        
+        <!-- BOUTON S'ABONNER -->
+        <button onclick="subscribe()" style="padding: 15px 30px; background: #4CAF50; color: white; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; width: 100%;">
+            🔔 S'abonner aux notifications
+        </button>
+        
+        <!-- BOUTON ENVOYER UNE NOTIFICATION -->
+        <div style="margin-top: 20px;">
+            <input id="msgInput" placeholder="Votre message..." style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: #1a1a2e; color: white; margin-bottom: 10px;">
+            <button onclick="sendNotif()" style="padding: 15px 30px; background: #2196F3; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; width: 100%;">
+                🚀 Envoyer une notification
+            </button>
+        </div>
+        
+        <div id="result" style="margin-top: 20px; padding: 10px; background: #1a1a2e; border-radius: 8px; font-size: 14px; color: #aaa;"></div>
+    </div>
     
     <script>
-        async function subscribe() {
-            try {
-                const result = await OneSignal.Notifications.requestPermission();
-                document.getElementById('result').innerHTML = '✅ Abonnement réussi ! Statut : ' + result;
-                alert('✅ Vous êtes maintenant abonné !');
-            } catch(e) {
-                document.getElementById('result').innerHTML = '❌ Erreur : ' + e.message;
-                alert('❌ Erreur : ' + e.message);
+        // ============================================================
+        // DÉTECTION ANDROID ET AFFICHAGE DU BOUTON D'INSTALLATION
+        // ============================================================
+        const isAndroid = /Android/i.test(navigator.userAgent);
+        let deferredPrompt = null;
+        
+        if (isAndroid) {
+            document.getElementById('installBanner').style.display = 'block';
+        }
+        
+        // Capturer l'événement d'installation
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installBanner').style.display = 'block';
+        });
+        
+        // Fonction d'installation
+        async function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const result = await deferredPrompt.userChoice;
+                if (result.outcome === 'accepted') {
+                    document.getElementById('installBanner').style.display = 'none';
+                    alert('✅ Application installée !');
+                }
+            } else {
+                alert('📲 Ouvrez Chrome, appuyez sur ⋮ > "Ajouter à l\'écran d\'accueil"');
             }
         }
         
-        async function sendTest() {
-            const msg = document.getElementById('msg').value || 'Test';
+        // ============================================================
+        // FONCTION S'ABONNER
+        // ============================================================
+        async function subscribe() {
+            const statusDiv = document.getElementById('subStatus');
+            statusDiv.textContent = '⏳ Demande de permission...';
+            statusDiv.style.color = 'yellow';
+            
+            try {
+                const result = await OneSignal.Notifications.requestPermission();
+                if (result) {
+                    statusDiv.textContent = '✅ Abonné avec succès !';
+                    statusDiv.style.color = '#7bed9f';
+                    alert('✅ Vous êtes maintenant abonné !');
+                } else {
+                    statusDiv.textContent = '❌ Permission refusée. Vérifiez les paramètres.';
+                    statusDiv.style.color = '#ff6b81';
+                    alert('❌ Permission refusée. Activez les notifications dans Paramètres > Applications > Chrome > Notifications.');
+                }
+            } catch (error) {
+                statusDiv.textContent = '❌ Erreur : ' + error.message;
+                statusDiv.style.color = '#ff6b81';
+                alert('❌ Erreur : ' + error.message);
+            }
+        }
+        
+        // ============================================================
+        // FONCTION ENVOYER UNE NOTIFICATION
+        // ============================================================
+        async function sendNotif() {
+            const msg = document.getElementById('msgInput').value.trim();
             const resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = '⏳ Envoi en cours...';
+            
+            if (!msg) {
+                resultDiv.textContent = '❌ Veuillez entrer un message';
+                resultDiv.style.color = '#ff6b81';
+                return;
+            }
+            
+            resultDiv.textContent = '⏳ Envoi en cours...';
+            resultDiv.style.color = 'yellow';
             
             try {
                 const response = await fetch('https://x-vps.gamer.gd/n.php', {
@@ -58,34 +148,23 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 
                         message: msg,
-                        title: 'Test depuis votre site'
+                        title: 'Notification depuis Android'
                     })
                 });
                 
-                const text = await response.text();
-                resultDiv.innerHTML = '📤 Réponse :\n' + text;
-                
-                try {
-                    const data = JSON.parse(text);
-                    if (data.success) {
-                        alert('✅ Notification envoyée !');
-                    } else {
-                        alert('⚠️ Erreur : ' + (data.error || 'inconnue'));
-                    }
-                } catch(e) {
-                    alert('⚠️ Réponse non-JSON : ' + text.substring(0, 100));
+                const data = await response.json();
+                if (data.success) {
+                    resultDiv.textContent = '✅ Notification envoyée ! (ID: ' + data.id + ')';
+                    resultDiv.style.color = '#7bed9f';
+                } else {
+                    resultDiv.textContent = '❌ Erreur : ' + (data.error || 'Inconnue');
+                    resultDiv.style.color = '#ff6b81';
                 }
-            } catch(e) {
-                resultDiv.innerHTML = '❌ Erreur : ' + e.message;
-                alert('❌ Erreur : ' + e.message);
+            } catch (error) {
+                resultDiv.textContent = '❌ Erreur : ' + error.message;
+                resultDiv.style.color = '#ff6b81';
             }
         }
     </script>
-    
-    <hr>
-    <p style="color: #666; font-size: 12px;">
-        🔗 Proxy : https://x-vps.gamer.gd/n.php<br>
-        🔗 Site : https://shinigami-e.github.io/fille/test.html
-    </p>
 </body>
 </html>
