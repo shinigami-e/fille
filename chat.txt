@@ -70,3 +70,4 @@
 {"id":"1785155848_6a6751083d592","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"راه مشروحين فالقناة","timestamp":"2026-07-27 08:37:28","ip":"95.111.248.77"}
 {"id":"1785163944_6a6770a89f25b","pseudo":"User95113943","content":"شكون عندو esim","timestamp":"2026-07-27 10:52:24","ip":"95.111.248.77"}
 {"id":"1785164463_6a6772af7b3c9","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"Xno brito nzid f application","timestamp":"2026-07-27 11:01:03","ip":"85.190.99.80"}
+{"id":"1785208176_6a681d70ee48a","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"Xno brito nzid f application","timestamp":"2026-07-27 23:09:36","ip":"173.249.27.167","system":true}
