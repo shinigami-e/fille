@@ -71,4 +71,3 @@
 {"id":"1785163944_6a6770a89f25b","pseudo":"User95113943","content":"شكون عندو esim","timestamp":"2026-07-27 10:52:24","ip":"95.111.248.77"}
 {"id":"1785208176_6a681d70ee48a","pseudo":"@𝗧𝗲𝗿𝗺𝘂𝘅𝗡𝗲𝘁","content":"Xno brito nzid f application","timestamp":"2026-07-27 23:09:36","ip":"173.249.27.167","system":true}
 {"id":"1785208456_6a681e880e9f0","pseudo":"User17328454","content":"eSIM ?","timestamp":"2026-07-27 23:14:16","ip":"173.249.27.167"}
-{"id":"1785264258_6a68f8828159d","pseudo":"User17224258","content":"BELASAL-BELASAL123456","timestamp":"2026-07-28 14:44:18","ip":"172.237.120.250"}
