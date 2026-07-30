@@ -12,5 +12,19 @@
         "image_path": "esim\/esim_1785429262_85e21be2.png",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785429262_85e21be2.png",
         "created_at": "2026-07-30 12:34:24"
+    },
+    {
+        "id": "esim_6a6b7d475f293",
+        "title": "Esim algeria",
+        "country": "Algeria",
+        "price": "10",
+        "currency": "€",
+        "data_volume": "5G",
+        "validity": "30jour",
+        "description": "Available for all",
+        "featured": false,
+        "image_path": "esim\/esim_1785429318_f6ee54ee.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785429318_f6ee54ee.jpg",
+        "created_at": "2026-07-30 12:35:19"
     }
 ]
