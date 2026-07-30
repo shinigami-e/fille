@@ -40,5 +40,19 @@
         "trial_stock": 0,
         "trial_requests": 0,
         "operators": []
+    },
+    {
+        "id": "esim_6a6b87b514741",
+        "title": "eSIM morocco 5G",
+        "country": "Europ,France,Maroc",
+        "price": "2",
+        "currency": "€",
+        "data_volume": "20G",
+        "validity": "30jours",
+        "description": "Step into a world of unparalleled elegance with Eusim. Meticulously crafted for those who demand the extraordinary, Eusim represents the pinnacle of refined quality. Whether you are formulating a signature scent or seeking the purest raw material for your artisanal creations, this exceptional ingredient delivers a depth of character that is both timeless and modern. Elevate your craft. Experience the Eusim difference.",
+        "featured": true,
+        "image_path": "esim\/esim_1785431988_466b22a2.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785431988_466b22a2.jpg",
+        "created_at": "2026-07-30 13:19:49"
     }
 ]
