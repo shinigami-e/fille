@@ -11,7 +11,14 @@
         "featured": true,
         "image_path": "esim\/esim_1785429262_85e21be2.png",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785429262_85e21be2.png",
-        "created_at": "2026-07-30 12:34:24"
+        "created_at": "2026-07-30 12:34:24",
+        "views": 1,
+        "likes": 0,
+        "shares": 0,
+        "trial_enabled": false,
+        "trial_stock": 0,
+        "trial_requests": 0,
+        "operators": []
     },
     {
         "id": "esim_6a6b7d524754d",
@@ -25,6 +32,13 @@
         "featured": false,
         "image_path": "esim\/esim_1785429328_bb48bbb9.jpg",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785429328_bb48bbb9.jpg",
-        "created_at": "2026-07-30 12:35:30"
+        "created_at": "2026-07-30 12:35:30",
+        "views": 0,
+        "likes": 0,
+        "shares": 0,
+        "trial_enabled": false,
+        "trial_stock": 0,
+        "trial_requests": 0,
+        "operators": []
     }
 ]
