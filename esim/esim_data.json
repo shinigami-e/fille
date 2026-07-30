@@ -1,26 +1,5 @@
 [
     {
-        "id": "esim_6a6b7d107ba36",
-        "title": "Esim maroc 5G",
-        "country": "Maroc ",
-        "price": "10",
-        "currency": "€",
-        "data_volume": "5G",
-        "validity": "30jour",
-        "description": "Available for all",
-        "featured": true,
-        "image_path": "esim\/esim_1785429262_85e21be2.png",
-        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785429262_85e21be2.png",
-        "created_at": "2026-07-30 12:34:24",
-        "views": 1,
-        "likes": 1,
-        "shares": 1,
-        "trial_enabled": false,
-        "trial_stock": 0,
-        "trial_requests": 0,
-        "operators": []
-    },
-    {
         "id": "esim_6a6b7d524754d",
         "title": "eSIM egypt 5G",
         "country": "Egypt",
