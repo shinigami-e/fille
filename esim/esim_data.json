@@ -42,20 +42,6 @@
         "created_at": "2026-07-30 12:24:35"
     },
     {
-        "id": "esim_6a6b7b0636a65",
-        "title": "ccccccc",
-        "country": "cccccccccccccc",
-        "price": "444",
-        "currency": "€",
-        "data_volume": "ccccccccccc",
-        "validity": "cccccc",
-        "description": "ddd",
-        "featured": true,
-        "image_path": "esim\/esim_1785428740_7ac180a6.png",
-        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785428740_7ac180a6.png",
-        "created_at": "2026-07-30 12:25:42"
-    },
-    {
         "id": "esim_6a6b7b82d2ed8",
         "title": "ccccccc",
         "country": "cccccccccccccc",
