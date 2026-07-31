@@ -118,5 +118,26 @@
                 "at": "2026-07-30 23:09:00"
             }
         ]
+    },
+    {
+        "id": "esim_6a6cde06332a7",
+        "title": "eSIM FREE TRIAL",
+        "country": "All country ",
+        "price": "0",
+        "currency": "€",
+        "data_volume": "3GO",
+        "validity": "10jours",
+        "description": "Available for all ",
+        "featured": false,
+        "trial_enabled": true,
+        "trial_stock": 10,
+        "whatsapp": "212774813491",
+        "image_path": "esim\/esim_1785519621_52fc0c3e.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785519621_52fc0c3e.jpg",
+        "views": 0,
+        "likes": 0,
+        "shares": 0,
+        "trial_requests": 0,
+        "created_at": "2026-07-31 13:40:22"
     }
 ]
