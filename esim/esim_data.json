@@ -64,27 +64,5 @@
         "trial_requests": 0,
         "operators": [],
         "whatsapp": "2250000000000"
-    },
-    {
-        "id": "esim_6a6be46f89847",
-        "title": "esim",
-        "country": "tst",
-        "price": "99",
-        "currency": "€",
-        "data_volume": "tst",
-        "validity": "tst",
-        "description": "tst",
-        "featured": false,
-        "whatsapp": "212672761289",
-        "image_path": "esim\/esim_1785455726_4acf3a07.png",
-        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785455726_4acf3a07.png",
-        "created_at": "2026-07-30 19:55:27",
-        "views": 1,
-        "likes": 0,
-        "shares": 0,
-        "trial_enabled": false,
-        "trial_stock": 0,
-        "trial_requests": 0,
-        "operators": []
     }
 ]
