@@ -62,7 +62,7 @@
         "views": 7,
         "likes": 0,
         "shares": 0,
-        "trial_enabled": false,
+        "trial_enabled": true,
         "trial_stock": 5,
         "trial_requests": 0,
         "operators": [],
