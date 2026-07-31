@@ -19,7 +19,8 @@
         "trial_stock": 0,
         "trial_requests": 0,
         "operators": [],
-        "whatsapp": "2250000000000"
+        "whatsapp": "2250000000000",
+        "share_log": []
     },
     {
         "id": "esim_6a6b87b514741",
@@ -41,7 +42,8 @@
         "trial_stock": 0,
         "trial_requests": 0,
         "operators": [],
-        "whatsapp": "2250000000000"
+        "whatsapp": "2250000000000",
+        "share_log": []
     },
     {
         "id": "esim_6a6bd0e85d7e0",
@@ -56,13 +58,14 @@
         "image_path": "esim\/esim_1785450727_d9bb3bb6.png",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785450727_d9bb3bb6.png",
         "created_at": "2026-07-30 18:32:08",
-        "views": 2,
+        "views": 3,
         "likes": 0,
         "shares": 1,
         "trial_enabled": false,
         "trial_stock": 0,
         "trial_requests": 0,
         "operators": [],
-        "whatsapp": "212672761289"
+        "whatsapp": "212672761289",
+        "share_log": []
     }
 ]
