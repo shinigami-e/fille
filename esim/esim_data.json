@@ -99,5 +99,20 @@
         "trial_requests": 0,
         "operators": [],
         "share_log": []
+    },
+    {
+        "id": "esim_6a6c107a60a67",
+        "title": "eSIM Algeria 5G",
+        "country": "Algeria ",
+        "price": "4",
+        "currency": "€",
+        "data_volume": "10 G",
+        "validity": "30jour ",
+        "description": "",
+        "featured": true,
+        "whatsapp": "212774813491",
+        "image_path": "esim\/esim_1785467001_a87d551d.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785467001_a87d551d.jpg",
+        "created_at": "2026-07-30 23:03:22"
     }
 ]
