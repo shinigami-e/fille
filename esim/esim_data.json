@@ -82,5 +82,20 @@
         "image_path": "esim\/esim_1785467001_a87d551d.jpg",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785467001_a87d551d.jpg",
         "created_at": "2026-07-30 23:03:22"
+    },
+    {
+        "id": "esim_6a6c111823d52",
+        "title": "eSIMO USA 5G",
+        "country": "USA Canada all country ",
+        "price": "8.77",
+        "currency": "€",
+        "data_volume": "20 Go",
+        "validity": "30 jour",
+        "description": "",
+        "featured": true,
+        "whatsapp": "212774813491",
+        "image_path": "esim\/esim_1785467157_01c8f17d.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785467157_01c8f17d.jpg",
+        "created_at": "2026-07-30 23:06:00"
     }
 ]
