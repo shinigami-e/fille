@@ -85,8 +85,8 @@
         "views": 6,
         "likes": 0,
         "shares": 0,
-        "trial_enabled": false,
-        "trial_stock": 0,
+        "trial_enabled": true,
+        "trial_stock": 10,
         "trial_requests": 0,
         "operators": [],
         "share_log": []
