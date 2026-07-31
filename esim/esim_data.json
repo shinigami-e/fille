@@ -76,5 +76,20 @@
                 "at": "2026-07-30 20:52:13"
             }
         ]
+    },
+    {
+        "id": "esim_6a6c0ff6c78b2",
+        "title": "eSIM Iraq 5G",
+        "country": "Iraq, Egypt ",
+        "price": "5",
+        "currency": "€",
+        "data_volume": "10 Go",
+        "validity": "30 jour",
+        "description": "",
+        "featured": true,
+        "whatsapp": "212774813491",
+        "image_path": "esim\/esim_1785466868_1e1e3e60.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785466868_1e1e3e60.jpg",
+        "created_at": "2026-07-30 23:01:10"
     }
 ]
