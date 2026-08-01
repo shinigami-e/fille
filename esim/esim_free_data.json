@@ -13,7 +13,7 @@
         "image_path": "esim\/esim_1785548475_fc197276.jpg",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785548475_fc197276.jpg",
         "views": 7,
-        "shares": 15,
+        "shares": 16,
         "trial_requests": 0,
         "share_log": [
             {
@@ -75,6 +75,10 @@
             {
                 "ip": "105.74.75.230",
                 "at": "2026-08-01 10:08:24"
+            },
+            {
+                "ip": "105.74.65.31",
+                "at": "2026-08-01 10:41:34"
             }
         ],
         "created_at": "2026-07-31 21:41:18",
