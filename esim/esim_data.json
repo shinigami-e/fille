@@ -123,5 +123,26 @@
                 "at": "2026-07-30 23:09:00"
             }
         ]
+    },
+    {
+        "id": "esim_6a6f627ddea96",
+        "title": " لجميع دول 3 أيام لا محدود مع هادية كونفيك دائم بعد انتهاء رصيد ومدة esim",
+        "country": "تدعم كل دول مع سوريا",
+        "price": "4",
+        "currency": "$",
+        "data_volume": "لا محدود",
+        "validity": "3 أيام",
+        "description": "سرعة تصل الى أكثر من 150 ميجا",
+        "featured": true,
+        "trial_enabled": false,
+        "trial_stock": 0,
+        "whatsapp": "212706755600",
+        "image_path": "esim\/esim_1785684603_f426a9b9.png",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785684603_f426a9b9.png",
+        "views": 0,
+        "likes": 0,
+        "shares": 0,
+        "trial_requests": 0,
+        "created_at": "2026-08-02 11:30:05"
     }
 ]
