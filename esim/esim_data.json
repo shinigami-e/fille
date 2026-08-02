@@ -190,10 +190,12 @@
         "whatsapp": "212774813491",
         "image_path": "esim\/esim_1785699705_f7225d3e.png",
         "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1785699705_f7225d3e.png",
-        "views": 0,
+        "views": 1,
         "likes": 0,
         "shares": 0,
         "trial_requests": 0,
-        "created_at": "2026-08-02 15:41:46"
+        "created_at": "2026-08-02 15:41:46",
+        "operators": [],
+        "share_log": []
     }
 ]
