@@ -506,4 +506,4 @@ barre()
  function adss(){
 window.location.href='https://www.effectivecpmnetwork.com/rqstfk2mgh?key=de708321263ee6fe830360c57167368f'
  }
-window.open('https://example.com');
+window.location.href=''
