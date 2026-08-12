@@ -93,4 +93,3 @@
 {"id":"1786045081_6a74e299134ba","pseudo":"User45135080","content":"اورنج كيخدمو غير 5 ساعات كيخص سيرفر اخر","timestamp":"2026-08-06 15:38:01","ip":"45.13.226.124"}
 {"id":"1786054505_6a750769699f1","pseudo":"User10254505","content":"Afeen addrarri","timestamp":"2026-08-06 18:15:05","ip":"102.52.71.193"}
 {"id":"1786508513_6a7bf4e14c863","pseudo":"User15258511","content":"Afeen addrarri","timestamp":"2026-08-12 00:21:53","ip":"152.53.95.19"}
-{"id":"1786508529_6a7bf4f196e25","pseudo":"User15258529","content":"Afeen addrarri","timestamp":"2026-08-12 00:22:09","ip":"152.53.95.19"}
