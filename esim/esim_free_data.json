@@ -462,6 +462,26 @@
         "shares": 0,
         "trial_requests": 0,
         "share_log": [],
-        "created_at": "2026-08-16 17:41:15"
+        "created_at": "2026-08-16 17:41:15",
+        "operators": []
+    },
+    {
+        "id": "free_6a822eb1d9b4d",
+        "title": "eSIM tree",
+        "country": "#all",
+        "data_volume": "15 Go",
+        "validity": " 8 days",
+        "description": "",
+        "required_shares": 8,
+        "trial_stock": 3,
+        "active": true,
+        "whatsapp": "212774813491",
+        "image_path": "esim\/esim_1786916527_d3235e38.jpg",
+        "image_url": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/esim\/esim_1786916527_d3235e38.jpg",
+        "views": 0,
+        "shares": 0,
+        "trial_requests": 0,
+        "share_log": [],
+        "created_at": "2026-08-16 17:42:09"
     }
 ]
