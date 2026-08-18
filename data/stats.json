@@ -1,16 +1,16 @@
 {
-    "total_views": 1,
+    "total_views": 2,
     "clicks_by_university": {
         "usms": 1
     },
     "history": {
-        "2026-08-18": 1
+        "2026-08-18": 2
     },
     "visitors": {
         "173.249.27.167": {
-            "last_seen": "2026-08-18 14:53:31",
+            "last_seen": "2026-08-18 15:02:27",
             "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Mobile Safari\/537.36",
-            "views": 1
+            "views": 2
         }
     },
     "total_shares": 0,
