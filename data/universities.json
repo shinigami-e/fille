@@ -1,0 +1,74 @@
+[
+    {
+        "id": "um5r",
+        "name": "Université Mohammed V - Rabat",
+        "city": "Rabat",
+        "logo": ""
+    },
+    {
+        "id": "uh2c",
+        "name": "Université Hassan II - Casablanca",
+        "city": "Casablanca",
+        "logo": ""
+    },
+    {
+        "id": "uca",
+        "name": "Université Cadi Ayyad - Marrakech",
+        "city": "Marrakech",
+        "logo": ""
+    },
+    {
+        "id": "usmba",
+        "name": "Université Sidi Mohamed Ben Abdellah",
+        "city": "Fès",
+        "logo": ""
+    },
+    {
+        "id": "uae",
+        "name": "Université Abdelmalek Essaâdi",
+        "city": "Tétouan",
+        "logo": ""
+    },
+    {
+        "id": "uit",
+        "name": "Université Ibn Tofail",
+        "city": "Kénitra",
+        "logo": ""
+    },
+    {
+        "id": "uiz",
+        "name": "Université Ibn Zohr",
+        "city": "Agadir",
+        "logo": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/assets\/uploads\/universities\/uiz.webp?v=1787077252"
+    },
+    {
+        "id": "umi",
+        "name": "Université Moulay Ismaïl",
+        "city": "Meknès",
+        "logo": ""
+    },
+    {
+        "id": "ucd",
+        "name": "Université Chouaib Doukkali",
+        "city": "El Jadida",
+        "logo": ""
+    },
+    {
+        "id": "usms",
+        "name": "Université Sultan Moulay Slimane",
+        "city": "Béni Mellal",
+        "logo": ""
+    },
+    {
+        "id": "uh1",
+        "name": "Université Hassan I",
+        "city": "Settat",
+        "logo": ""
+    },
+    {
+        "id": "ump",
+        "name": "Université Mohammed Premier",
+        "city": "Oujda",
+        "logo": ""
+    }
+]
