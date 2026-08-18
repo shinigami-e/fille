@@ -24,15 +24,21 @@
             "views": 6
         }
     },
-    "total_shares": 1,
+    "total_shares": 2,
     "shares_by_platform": {
-        "copy": 1
+        "copy": 1,
+        "whatsapp": 1
     },
     "share_history": [
         {
             "ip": "173.249.27.167",
             "platform": "copy",
             "date": "2026-08-18 14:16:13"
+        },
+        {
+            "ip": "173.249.27.167",
+            "platform": "whatsapp",
+            "date": "2026-08-18 14:25:15"
         }
     ]
 }
