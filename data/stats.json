@@ -23,7 +23,15 @@
             "views": 1
         }
     },
-    "total_shares": 0,
-    "shares_by_platform": [],
-    "share_history": []
+    "total_shares": 1,
+    "shares_by_platform": {
+        "whatsapp": 1
+    },
+    "share_history": [
+        {
+            "ip": "173.249.27.167",
+            "platform": "whatsapp",
+            "date": "2026-08-18 16:58:48"
+        }
+    ]
 }
