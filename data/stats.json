@@ -1,5 +1,5 @@
 {
-    "total_views": 26,
+    "total_views": 27,
     "clicks_by_university": {
         "um5r": 7,
         "uh1": 1,
@@ -15,6 +15,16 @@
     },
     "history": {
         "2026-08-17": 4,
-        "2026-08-18": 22
-    }
+        "2026-08-18": 23
+    },
+    "visitors": {
+        "173.249.27.167": {
+            "last_seen": "2026-08-18 14:15:38",
+            "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Mobile Safari\/537.36",
+            "views": 1
+        }
+    },
+    "total_shares": 0,
+    "shares_by_platform": [],
+    "share_history": []
 }
