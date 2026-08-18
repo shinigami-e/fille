@@ -1,0 +1,19 @@
+{
+    "site_title": "OpenMaster Maroc — Annuaire des Masters dans les universités publiques marocaines",
+    "site_title_short": "OpenMaster Maroc",
+    "site_description": "Découvrez tous les masters proposés par les 12 universités publiques du Maroc. Filtrez par ville, domaine ou type d'établissement.",
+    "site_keywords": "masters Maroc, universités publiques Maroc, formations Master, enseignement supérieur Maroc",
+    "og_title": "OpenMaster Maroc — Annuaire des Masters publics",
+    "og_description": "Trouvez le Master idéal dans les universités publiques marocaines. Plus de 12 universités référencées.",
+    "eyebrow_text": "Annuaire des masters publics",
+    "tagline": "Choisissez une université pour découvrir les masters qu'elle propose actuellement.",
+    "about_text": "OpenMaster Maroc est un annuaire collaboratif des masters proposés par les universités publiques marocaines. Notre objectif : rendre l'information sur les formations Master accessible à tous les étudiants marocains.",
+    "contact_email": "contact@openmaster.ma",
+    "facebook_url": "https:\/\/facebook.com",
+    "youtube_url": "https:\/\/youtube.com",
+    "twitter_url": "https:\/\/twitter.com",
+    "logo_path": "assets\/images\/logo.png",
+    "logo_size": 99,
+    "logo_size_sidebar": 79,
+    "logo_size_mobile": 51
+}
