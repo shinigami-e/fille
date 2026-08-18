@@ -1,16 +1,16 @@
 {
-    "total_views": 3,
+    "total_views": 4,
     "clicks_by_university": {
         "usms": 1
     },
     "history": {
-        "2026-08-18": 3
+        "2026-08-18": 4
     },
     "visitors": {
         "173.249.27.167": {
-            "last_seen": "2026-08-18 15:58:11",
-            "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Safari\/537.36",
-            "views": 3
+            "last_seen": "2026-08-18 16:01:53",
+            "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Mobile Safari\/537.36",
+            "views": 4
         }
     },
     "total_shares": 0,
