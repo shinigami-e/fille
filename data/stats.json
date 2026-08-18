@@ -1,6 +1,8 @@
 {
     "total_views": 1,
-    "clicks_by_university": [],
+    "clicks_by_university": {
+        "usms": 1
+    },
     "history": {
         "2026-08-18": 1
     },
