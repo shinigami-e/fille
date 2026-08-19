@@ -1,17 +1,5 @@
 [
     {
-        "id": "m_6a84de1b5480a",
-        "university_id": "uiz",
-        "title": "Master FSJP Agadir",
-        "duration": "",
-        "description": "",
-        "link": "",
-        "logo": "https:\/\/raw.githubusercontent.com\/shinigami-e\/fille\/main\/assets\/uploads\/masters\/m_6a84de1b5480a.webp?v=1787092508",
-        "domain": "Sciences Juridiques, Économiques et de Gestion",
-        "school_type": "Faculté des Sciences Juridiques, Économiques et Sociales (FSJES)",
-        "created_at": "2026-08-18T18:35:09-04:00"
-    },
-    {
         "id": "m_6a84e28c98328",
         "university_id": "uiz",
         "title": "Master FSJP Agadir",
