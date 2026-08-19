@@ -1,5 +1,5 @@
 {
-    "total_views": 64,
+    "total_views": 65,
     "clicks_by_university": {
         "usms": 6,
         "uiz": 12,
@@ -12,7 +12,8 @@
         "usmba": 1
     },
     "history": {
-        "2026-08-18": 64
+        "2026-08-18": 64,
+        "2026-08-19": 1
     },
     "visitors": {
         "173.249.27.167": {
