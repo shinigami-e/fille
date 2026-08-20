@@ -1,5 +1,5 @@
 {
-    "total_views": 43,
+    "total_views": 44,
     "clicks_by_university": {
         "uca": 1,
         "uiz": 1,
@@ -8,6 +8,7 @@
         "usmba": 1
     },
     "history": {
-        "2026-08-19": 43
+        "2026-08-19": 43,
+        "2026-08-20": 1
     }
 }
